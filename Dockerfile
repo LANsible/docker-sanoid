@@ -4,9 +4,10 @@ FROM alpine:3.23
 ENV VERSION=v2.3.0
 
 RUN apk add --no-cache \
-  # sanoid dependencies
+  zfs \
   perl \
   perl-capture-tiny \
+# sanoid dependencies
   perl-config-inifiles \
   # syncoid dependencies
   openssh-client-default \

@@ -7,7 +7,9 @@ RUN apk add --no-cache \
   zfs \
   perl \
   perl-capture-tiny \
-# sanoid dependencies
+  # needed since busybox ps misses some assumed parameters
+  procps \
+  # sanoid dependencies
   perl-config-inifiles \
   # syncoid dependencies
   openssh-client-default \
